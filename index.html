@@ -57,6 +57,19 @@
             .list1 {
                 margin-left: 450px;
             }
+
+            .form {
+                color: darkslategray;
+                text-align: center;
+                font-family: Tahoma;
+                font-size: 30px;
+                margin-top: 40px;
+            }
+            .label {
+                border-style: solid;
+                border-radius: 5px;
+                margin-bottom: 5px;
+            }
         </style>
 
         <h1 class="text">Handmade Candles</h1>
@@ -68,7 +81,26 @@
             <li class="list1">Paraphine candles</li>
             <li class="list1">Stearine church candles</li>
         </ul>
+        <h1 class="form">What type of candles you like:</h1>
+        <form class="form">
 
+            <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked>
+                SOY</label>
+            <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">
+                HONEY</label><br>
+            <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked>
+                PARAPHINE</label>
+            <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">
+                STEARINE</label><br>
+
+            <h1 class="form">Please choose what candles you have:</H1>
+            <label class="label" for="loving"><input id="loving" type="checkbox" name="personality" value="loving">  Soy </label>
+            <label class="label" for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy">  Honey </label>
+            <label class="label" for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Paraphine </label>
+            <label class="label" for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy">  Stearine </label><br>      
+            <input type="text" placeholder="your email" required>
+            <button class="label" type="submit">Submit</button>
+        </form>
     </body>
 </div>
 
